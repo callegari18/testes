@@ -1,0 +1,524 @@
+<%- include('./partials/head')%>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/img/porto-seguro-logo-3-1.png" alt="" class="logoPorto">
+                </div>
+                <div class="col-md-9 whats">
+                    <div class="d-flex justify-content-end">
+                        <a href="https://whats.link/klmcorretoradeseguros"><img src="images/img/whatsap.png"
+                                class="logoWhats" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <div class="titulo">
+
+                <h1>Acidentes Pessoais Plus</h1>
+
+            </div>
+            <form action="/formulario/send" method="post" enctype="multipart/form-data" >
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputQuestionario-8">
+                            <h3>Qual plano deseja contratar?</h3>
+                        </label>
+                        <div class="form-row">
+                            <h5>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="app" id="app80" value="APP-80"
+                                        checked>
+                                    <label class="form-check-label" for="app80">
+                                        Acidentes Pessoais Plus 80 (A partir de R$ 300,00 anual)
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="app" id="app150" value="APP-150">
+                                    <label class="form-check-label" for="app150">
+                                        Acidentes Pessoais Plus 150 (A partir de R$ 550,00 anual)
+                                    </label>
+                                </div>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputNomeTitular">Nome Completo</label>
+                        <input type="text" class="form-control" id="inputNomeTitular" name="inputNomeTitular">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmailTitular">E-mail</label>
+                        <input type="email" class="form-control" id="inputEmailTitular" name="inputEmailTitular">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="inputSexoTitular">Sexo</label>
+                        <select id="inputSexoTitular" name="inputSexoTitular" class="form-control">
+                            <option selected>Selecionar</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Não binário</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputProfissaoTitular">Profissão</label>
+                        <input type="text" class="form-control" id="inputProfissaoTitular" name="inputProfissaoTitular">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDnTitular">Data Nascimento</label>
+                        <input type="date" class="form-control" id="inputDnTitular" name="inputDnTitular">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputEstadoCivilTitular">Estado civil</label>
+                        <select id="inputEstadoCivilTitular" name="inputEstadoCivilTitular" class="form-control">
+                            <option selected>Selecionar</option>
+                            <option>Solteiro</option>
+                            <option>Casado</option>
+                            <option>Viúvo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="inputRgTitular">Rg</label>
+                        <input type="text" class="form-control" id="inputRgTitular" name="inputRgTitular">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputDataExpedicaoTitular">Data expedição</label>
+                        <input type="date" class="form-control" id="inputDataExpedicaoTitular"
+                            name="inputDataExpedicaoTitular">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputOrgaoExpedidorTitular">Órgão expedidor</label>
+                        <input type="text" class="form-control" id="inputOrgaoExpedidorTitular"
+                            name="inputOrgaoExpedidorTitular">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputCpfTitular">CPF</label>
+                        <input type="text" class="form-control" id="inputCpfTitular" name="inputCpfTitular">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputNacionalidadeTitular">Nacionalidade</label>
+                        <input type="text" class="form-control" id="inputNacionalidadeTitular"
+                            name="inputNacionalidadeTitular">
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        <label for="inputTelResidencialTitular">Tel.Residencial</label>
+                        <input type="text" class="form-control" id="inputTelResidencialTitular"
+                            name="inputTelResidencialTitular">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputTelCelularTitular">Tel.Celular</label>
+                        <input type="text" class="form-control" id="inputTelCelularTitular"
+                            name="inputTelCelularTitular">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputTelComercialTitular">Tel.Comercial</label>
+                        <input type="text" class="form-control" id="inputTelComercialTitular"
+                            name="inputTelComercialTitular">
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="inputResideBrasilTitular">Reside no Brasil?</label>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="inputResideBrasilTitular" id="resideSim"
+                                value="Sim" checked>
+                            <label class="form-check-label" for="resideSim">
+                                Sim
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="inputResideBrasilTitular" id="resideNao"
+                                value="Não">
+                            <label class="form-check-label" for="resideNao">
+                                Não
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="inputCepTitular">Cep</label>
+                        <input type="text" class="form-control" id="inputCepTitular" name="inputCepTitular">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEnderecoTitular">Endereço</label>
+                        <input type="text" class="form-control" id="inputEnderecoTitular" name="inputEnderecoTitular"
+                            placeholder="Av.Ipiranga">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputComplementoTitular">Complemento</label>
+                        <input type="text" class="form-control" id="inputComplementoTitular"
+                            name="inputComplementoTitular" placeholder="Nº 100 Apto 23">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputBairroTitular">Bairro</label>
+                        <input type="text" class="form-control" id="inputBairroTitular" name="inputBairroTitular"
+                            placeholder="Ipiranga">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputCidadeTitular">Cidade</label>
+                        <input type="text" class="form-control" id="inputCidadeTitular" name="inputCidadeTitular"
+                            placeholder="São Paulo">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEstadoTitular">Estado</label>
+                        <input type="text" class="form-control" id="inputEstadoTitular" name="inputEstadoTitular"
+                            placeholder="São Paulo">
+                    </div>
+
+                </div>
+                <hr>
+                <h4>Em caso de acidente comunicar:</h4>
+                <h5>Contato</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputNomeContato-1">Nome Completo</label>
+                        <input type="text" class="form-control" id="inputNomeContato-1" name="inputNomeContato">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputTelResidencialContato-1">Tel.Residencial</label>
+                        <input type="text" class="form-control" id="inputTelResidencialContato-1"
+                            name="inputTelResidencialContato">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputTelCelularContato-1">Tel.Celular</label>
+                        <input type="text" class="form-control" id="inputTelCelularContato-1"
+                            name="inputTelCelularContato">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group col-md-12">
+                    <h4>Questionário de Saúde:</h4>
+                    <div class="form-group col-md-12">
+                        <label for="inputQuestionario">
+                            <p>Fumante ?<p>
+                        </label>
+                        <div class="form-row">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="fumante" id="fumanteSim" value="sim">
+                                <label class="form-check-label" for="fumanteSim">
+                                    Sim
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="fumante" id="fumanteNao" value="Não"
+                                    checked>
+                                <label class="form-check-label" for="fumanteNao">
+                                    Não
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Declaro para todos os fins e efeitos legais, que: </p>
+                    <ol class="questionarioRisco">
+                        <li>Estou em perfeitas condições de saúde e em plena atividade de trabalho.</li>
+                        <li>Não fui submetido a tratamento médico em regime hospitalar ou intervenções cirúrgicas,
+                            incluindo biópsia ou punção, nos últimos 5 (cinco) anos.</li>
+                        <li>Nunca fui submetido a tratamentos com radioterapia ou quimioterapia.</li>
+                        <li>Não sou portador de nenhuma doença crônica ou congênita.</li>
+                        <li>Não realizei exames que tenham apresentado resultados alterados, tais como ressonância
+                            magnética, rx, tomografia, ultrassonografia, endoscopia, exames de sangue ou qualquer outro.
+                        </li>
+                        <li>Não sou tripulante ou piloto em qualquer tipo de aeronave.</li>
+                        <li>Não pratico esportes aéreos ou subaquáticos.</li>
+                        <li>Não sou piloto em competições automobilísticas ou motociclísticas.</li>
+                    </ol>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputQuestionarioDeSaude">Há alguma resalva referente a eventos preexistentes para
+                            as
+                            afirmações acima?</label>
+                        <div class="form-row">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="questionarioDeSaude"
+                                    id="questionarioRiscoSim" value="Sim">
+                                <label class="form-check-label" for="questionarioRiscoSim">
+                                    Sim
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="questionarioDeSaude"
+                                    id="questionarioRiscoNao" value="Não" checked>
+                                <label class="form-check-label" for="questionarioRiscoNao">
+                                    Não
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="observacoes" class="col-form-label">Observações</label>
+                            <textarea class="form-control" id="observacoes" name="observacoes"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <h4>Lista de beneficiários:</h4>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputNomeBeneficiario1">Nome Completo</label>
+                                <input type="text" class="form-control" id="inputNomeBeneficiario1"
+                                    name="inputNomeBeneficiario1">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputDnBeneficiario1">Data nascimento</label>
+                                <input type="date" class="form-control" id="inputDnBeneficiario1"
+                                    name="inputDnBeneficiario1">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputCpfBeneficiario1">CPF</label>
+                                <input type="text" class="form-control" id="inputCpfBeneficiario1"
+                                    name="inputCpfBeneficiario1">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputDistribuicaoBeneficiario1">% Distribuido</label>
+                                <input type="number" class="form-control" id="inputDistribuicaoBeneficiario1"
+                                    name="inputDistribuicaoBeneficiario1">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputNomeBeneficiario2">Nome Completo</label>
+                                <input type="text" class="form-control" id="inputNomeBeneficiario2"
+                                    name="inputNomeBeneficiario2">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputDnBeneficiario2">Data nascimento</label>
+                                <input type="date" class="form-control" id="inputDnBeneficiario2"
+                                    name="inputDnBeneficiario2">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputCpfBeneficiario2">CPF</label>
+                                <input type="text" class="form-control" id="inputCpfBeneficiario2"
+                                    name="inputCpfBeneficiario2">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputDistribuicaoBeneficiario2">% Distribuido</label>
+                                <input type="number" class="form-control" id="inputDistribuicaoBeneficiario2"
+                                    name="inputDistribuicaoBeneficiario2">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputNomeBeneficiario3">Nome Completo</label>
+                                <input type="text" class="form-control" id="inputNomeBeneficiario3"
+                                    name="inputNomeBeneficiario3">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputDnBeneficiario3">Data nascimento</label>
+                                <input type="date" class="form-control" id="inputDnBeneficiario3"
+                                    name="inputDnBeneficiario3">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputCpfBeneficiario3">CPF</label>
+                                <input type="text" class="form-control" id="inputCpfBeneficiario3"
+                                    name="inputCpfBeneficiario3">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputDistribuicaoBeneficiario3">% Distribuido</label>
+                                <input type="number" class="form-control" id="inputDistribuicaoBeneficiario3"
+                                    name="inputDistribuicaoBeneficiario3">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputNomeBeneficiario4">Nome Completo</label>
+                                <input type="text" class="form-control" id="inputNomeBeneficiario4"
+                                    name="inputNomeBeneficiario4">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputDnBeneficiario4">Data nascimento</label>
+                                <input type="date" class="form-control" id="inputDnBeneficiario4"
+                                    name="inputDnBeneficiario4">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputCpfBeneficiario4">CPF</label>
+                                <input type="text" class="form-control" id="inputCpfBeneficiario4"
+                                    name="inputCpfBeneficiario4">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputDistribuicaoBeneficiario4">% Distribuido</label>
+                                <input type="number" class="form-control" id="inputDistribuicaoBeneficiario4"
+                                    name="inputDistribuicaoBeneficiario4">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputFomulariodeVoo">
+                            <h4>Quais tipos de Vôos você prática?</h4>
+                        </label>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <div>
+                                    <a href="/formulariopdf/asa_delta.pdf" target="_blank">
+                                    <img src="/images/img/asa_delta.png" class="voos" alt="">
+                                    Asa Delta
+                                </a>
+                                </div>
+                                <label class="inputFile" for="asaDeltaDoc-1">Arquivo 1</label>
+                                <label class="inputFile" for="asaDeltaDoc-2">Arquivo 2</label>
+                                <input type="file" name="files" id="asaDeltaDoc-1" accept="image/*">
+                                <input type="file" name="files" id="asaDeltaDoc-2" accept="image/*">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <div>
+                                    <a href="/formulariopdf/paramotor.pdf" target="_blank">
+                                    <img src="/images/img/paramotor.png" class="voos" alt="">
+                                    Paramotor
+                                </a>
+                                </div>
+                                <label class="inputFile" for="paramotor-1">Arquivo 1</label>
+                                <label class="inputFile" for="paramotor-2">Arquivo 2</label>
+                                <input type="file" name="files" id="paramotor-1" accept="image/*">
+                                <input type="file" name="files" id="paramotor-2" accept="image/*">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <div>
+                                    <a href="/formulariopdf/parapente.pdf" target="_blank">
+                                    <img src="/images/img/parapente.png" class="voos" alt="">
+                                    Parapente
+                                </a>
+                                </div>
+                                <label class="inputFile" for="parapente-1">Arquivo 1</label>
+                                <label class="inputFile" for="parapente-2">Arquivo 2</label>
+                                <input type="file" name="files" id="parapente-1" accept="image/*">
+                                <input type="file" name="files" id="parapente-2" accept="image/*">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <div>
+                                    <a href="/formulariopdf/planador.pdf" target="_blank">
+                                    <img src="/images/img/planador.png" class="voos" alt="">
+                                    Planador
+                                </a>
+                                </div>
+                                <label class="inputFile" for="planador-1">Arquivo 1</label>
+                                <label class="inputFile" for="planador-2">Arquivo 2</label>
+                                <input type="file" name="files" id="planador-1" accept="image/*">
+                                <input type="file" name="files" id="planador-2" accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <div>
+                                    <a href="/formulariopdf/paraquedismo.pdf" target="_blank"> 
+                                        <img src="/images/img/paraquedismo.png" class="voos" alt="">
+                                        Paraquedismo 
+                                    </a>
+                                </div>
+                                <label class="inputFile" for="paraquedismo-1">Arquivo 1</label>
+                                <label class="inputFile" for="paraquedismo-2">Arquivo 2</label>
+                                <input type="file" name="files" id="paraquedismo-1" accept="image/*">
+                                <input type="file" name="files" id="paraquedismo-2" accept="image/*">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <div>
+                                    <a href="/formulariopdf/ultraleve.pdf" target="_blank">
+                                        <img src="/images/img/ultraleve.png" class="voos" alt="">
+                                        Ultraleve
+                                    </a>
+                                </div>
+                                <label class="inputFile" for="ultraleve-1">Arquivo 1</label>
+                                <label class="inputFile" for="ultraleve-2">Arquivo 2</label>
+                                <input type="file" name="files" id="ultraleve-1" accept="image/*">
+                                <input type="file" name="files" id="ultraleve-2" accept="image/*">
+                            </div>
+                            <div class="form-group col-md-5">
+                                <div>
+                                    <a href="/formulariopdf/aviação_privada.pdf" target="_blank">
+                                        <img src="/images/img/aviacao_privada.png" class="voos" alt="">
+                                        Aviação Privada
+                                    </a>
+                                </div>
+                                <label class="inputFile" for="aviacao_privada-1">Arquivo 1</label>
+                                <label class="inputFile" for="aviacao_privada-2">Arquivo 2</label>
+                                <label class="inputFile" for="aviacao_privada-3">Arquivo 3</label>
+                                <input type="file" name="files" id="aviacao_privada-1" accept="image/*">
+                                <input type="file" name="files" id="aviacao_privada-2" accept="image/*">
+                                <input type="file" name="files" id="aviacao_privada-3" accept="image/*">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputPagamento">
+                            <h4>Dados para pagamento:</h4>
+                        </label>
+                        <div class="form-row">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="inputPagamentoForma" id="boleto"
+                                    value="Boleto" checked>
+                                <label class="form-check-label" for="boleto">
+                                    Boleto
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="inputPagamentoForma" id="cartao"
+                                    value="Cartão">
+                                <label class="form-check-label" for="cartao">
+                                    Cartão de Crédito
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="inputPagamentoParcela" id="avista"
+                                    value="A vista" checked>
+                                <label class="form-check-label" for="avista">
+                                    A vista
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="inputPagamentoParcela" id="4x"
+                                    value="4 x">
+                                <label class="form-check-label" for="4x">
+                                    4 x
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-end">
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+            <hr>
+
+        </main>
+
+        <%- include('./partials/footer') %>
